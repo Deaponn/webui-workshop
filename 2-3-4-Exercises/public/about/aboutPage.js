@@ -30,7 +30,7 @@ const detailsButton = (model) =>
         "button",
         {
             onclick: () => {
-                model.aboutModel.setDetails(`new detail @ ${Date.now()}`, "detail text");
+                model.aboutModel.appendDetails(`new detail @ ${Date.now()}`, "detail text");
             },
         },
         "Get details"
