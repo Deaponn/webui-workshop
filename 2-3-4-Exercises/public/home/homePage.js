@@ -30,7 +30,7 @@ const usernameChange = (model) =>
         ["Change username", iconWrench()]
     );
 
-const displayUsername = (model) => h("", `Your username is ${model.homeModel.getUsername()}`);
+const displayUsername = (model) => h("#username", `Your username is ${model.homeModel.getUsername()}`);
 
 const content = (model) =>
     h("", [
