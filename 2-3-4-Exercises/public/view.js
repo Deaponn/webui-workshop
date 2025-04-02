@@ -19,10 +19,10 @@ export default (model) => [
  * @return {vnode}
  */
 const header = (model) => {
-  const { router: { params: { page } } } = model;
+  const { router: { params: { page } }, random } = model;
   return h('.p2.shadow-level2.level2', {
     style: 'display: flex; justify-content: center'
-  }, `Welcome to your ${page} page`);
+  }, `Welcome to your ${page} page. Your random number is ${random}`);
 }
 
 /**
