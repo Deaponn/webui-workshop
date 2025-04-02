@@ -12,7 +12,7 @@ jobs:
       - run: |
           cd 2-3-4-Exercises
           npm ci
-      - run: npm run test
+          npm run test
   test-on-ubuntu:
     runs-on: ubuntu-24.04
     steps:
@@ -23,4 +23,4 @@ jobs:
       - run: |
           cd 2-3-4-Exercises
           npm ci
-      - run: npm run test
+          npm run test
