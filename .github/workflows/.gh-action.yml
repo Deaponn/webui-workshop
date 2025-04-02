@@ -5,22 +5,22 @@ jobs:
   test-on-macos:
     runs-on: macOS-latest
     steps:
-        uses: actions/checkout@v4
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-        run: |
+      - run: |
           cd 2-3-4-Exercises
           npm ci
-        run: npm run test
+      - run: npm run test
   test-on-ubuntu:
     runs-on: ubuntu-24.04
     steps:
-        uses: actions/checkout@v4
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-        run: |
+      - run: |
           cd 2-3-4-Exercises
           npm ci
-        run: npm run test
+      - run: npm run test
